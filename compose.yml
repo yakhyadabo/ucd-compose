@@ -1,0 +1,24 @@
+###
+#
+#
+#
+version: '2'
+services:
+  ucd-server:
+    image: ibmcom/ucds
+    ports:
+      - 8443:8443
+      - 7918:7918
+  ucd-agent:
+    image: ibmcom/ucda
+    depends_on:
+      - ucd-server
+      - ucd-relay
+  ucd-relay:
+    image: ibmcom/ucdr
+    ports:
+      - 7916:7916
+      - 20080:20080
+      - 20081:20081
+    depends_on:
+      - ucd-server
