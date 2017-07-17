@@ -1,1 +1,13 @@
+== IBM UrbanCode Deploy 
+
 See : https://github.com/IBM-UrbanCode/UCD-Docker-Images/tree/master/compose/Deploy
+
+=== Connection : 
+https://localhost:8443/#dashboard
+admin/admin
+
+
+=== Plugin downloads url
+Tomcat : https://developer.ibm.com/urbancode/plugin/tomcat-ibmucd/
+DBUpgrader : https://developer.ibm.com/urbancode/plugin/ibm-urbancode-deploy-dbupgrader-ibmucd/
+
